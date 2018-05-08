@@ -1,0 +1,19 @@
+header{
+  height: $header-height;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+.navbar{
+  background-color: $brand-white;
+  padding: 0 $spacing !important;
+  border-bottom: 1px solid $brand-grey;
+  height: 100%; 
+}
+.nav-link{
+  padding: $spacing!important;
+}
+.navbar-light .navbar-nav .active > .nav-link{
+  color: $brand-color;
+  background: $brand-grey
+}

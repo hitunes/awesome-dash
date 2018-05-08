@@ -1,0 +1,40 @@
+.nav-open .wrapper{
+  transform: translateX(-#{$aside-width});
+}
+
+.wrapper{
+    position: relative;
+  transition: 0.33s all ease;
+  // transform: translateX(0);
+  z-index: 6;
+  background-color: $brand-grey;
+  min-height: 100%;
+}
+.body__overlay{
+  position: fixed;
+  width:calc(100% - #{$aside-width});
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+
+}
+
+main{
+  padding-top: $header-height;
+  // exact height of header-nav
+}
+
+.main-section {
+  width: calc(100% - #{$aside-width});
+  margin-left: auto;
+  padding: $spacing * 2;
+  @media(max-width: 991px){
+    width: 100%;
+  }
+}
+.panels{
+  margin-bottom: $spacing * 2;
+}

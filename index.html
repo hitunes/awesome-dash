@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Awesome Dashboard</title>
+  <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/plugins/simple-line-icons/css/simple-line-icons.css">
+  <link rel="stylesheet" href="assets/plugins/introjs/introjs.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+<!-- navbar lives here  -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#" >Navbar</a>
+    <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" >
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Account <span class="sr-only">(current)</span></a>
+        </li>
+      
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Notifications
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Log out</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    </header>
+    <main class= "main__section">
+<aside class="aside__left">
+<ul class="aside__menuList">
+<li class="aside__items">
+  <a href="" class="aside__links d-flex">
+    <i class="icon-chart aside__icons"></i>
+    <p class="aside__text"  data-step="1" data-intro="This is a tooltip!">Dashboard</p>
+  </a>
+</li>
+<li class="aside__items">
+  <a href="#" class="aside__links d-flex" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">
+    <i class="icon-chart aside__icons"></i>
+    <p class="aside__text">Profile</p>
+  </a>
+  <ul class="collapse multi-collapse aside__collapse" id="collapseExample">
+    <li class="aside__items">
+      <a href="#" class="aside__links d-flex">
+        <i class="icon-chart aside__icons"></i>
+        <p class="aside__text">Profile 1</p>
+      </a>
+    </li>
+    <li class="aside__items">
+      <a href="#" class="aside__links d-flex">
+        <i class="icon-chart aside__icons"></i>
+        <p class="aside__text">Profile 2</p>
+      </a>
+    </li>
+  </ul>
+</li>
+<li class="aside__items">
+  <a href="" class="aside__links d-flex">
+    <i class="icon-chart aside__icons"></i>
+    <p class="aside__text">Chart</p>
+  </a>
+</li>
+</ul>
+</aside>
+
+<section class="main-section">
+    
+  <div class="panels">
+<div class="row">
+  <div class="col">
+      <div class="card card--red">
+          <div class="card-body ">
+            <h5 class="card-title">102</h5>
+            <h6 class="card-subtitle mb-2">Projects</h6>
+            <hr>
+            <small>Last Week</small>
+          </div>
+        </div>
+  </div>
+  <div class="col">
+      <div class="card card--yellow">
+          <div class="card-body">
+            <h5 class="card-title">102</h5>
+            <h6 class="card-subtitle mb-2">Projects</h6>
+            <hr>
+            <small>Last Week</small>
+          </div>
+        </div>
+  </div>
+  <div class="col">
+      <div class="card card--blue">
+          <div class="card-body">
+            <h5 class="card-title">102</h5>
+            <h6 class="card-subtitle mb-2">Projects</h6>
+            <hr>
+            <small>Last Week</small>
+          </div>
+        </div>
+  </div>
+  <div class="col">
+      <div class="card card--green">
+          <div class="card-body">
+            <h5 class="card-title">102</h5>
+            <h6 class="card-subtitle mb-2">Projects</h6>
+            <hr>
+            <small>Last Week</small>
+          </div>
+        </div>
+  </div>
+</div>
+
+  </div>
+  <div class="charts">
+    <div class="card">
+<div class="card-body">
+    <canvas id="myChart"></canvas>
+</div>
+    </div>
+
+  </div>
+  <div>
+      <a class="btn btn-large btn-success" href="javascript:void(0);" onclick="javascript:introJs().start();">Show me how</a>
+  </div>
+  <span class="counter">1,234,567.00</span>
+  <span>$</span><span class="counter">1.99</span>
+  <span class="counter">12345</span>
+</section>
+    </main>
+  </div>
+
+
+
+<header>
+
+</header>
+<main>
+
+</main>
+
+<footer>
+  
+</footer>
+<!-- main -->
+
+  <script src="assets/plugins/jquery.min.js"></script>
+  <script src="assets/plugins/popper.min.js"></script>
+  <script src="assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="assets/plugins/notify.min.js"></script>
+  <script src="assets/plugins/Chart.bundle.min.js"></script>
+  <script src="assets/plugins/introjs/intro.min.js"></script>
+  <script src="assets/plugins/jquery.counterup.min.js"></script>
+  <script src="assets/plugins/jquery.waypoints.min.js"></script>
+  <script src="assets/plugins/noframework.waypoints.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.onreadystatechange = function(){
+      if (document.readyState === 'complete') {
+        app.asideController();
+        app.chartHandler();
+        
+        introJs().start();
+      }
+    };
+  jQuery(document).ready(function( $ ) {
+    $('.counter').counterUp();
+  });
+</script>
+</body>
+
+</html>

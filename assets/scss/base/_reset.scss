@@ -1,0 +1,27 @@
+*, *:before, *:after{
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+}
+body{
+  background-color: $brand-grey;
+  color: $brand-color;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+ul{
+  list-style: none;
+  padding: 0;
+}
+li{
+  padding: 0;
+}
+a{
+  color: $brand-color;
+  text-decoration: none!important;
+  &:hover{
+    color: $brand-color;
+  }
+}
